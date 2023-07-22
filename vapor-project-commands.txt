@@ -1,0 +1,36 @@
+
+Link: https://docs.vapor.codes/getting-started/hello-world/
+
+Commands:
+
+Create new Project:
+vapor new project-name -flag
+e.g. vapor new hello -n
+
+
+
+Change to newly created directory:
+cd hello
+
+
+
+Build & Run:
+open Package.swift
+	It will automatically begin downloading Swift Package Manager dependencies. This can take some time the first time you open a project. When dependency resolution is complete Xcode will populate the available schemes.
+
+At the top of the window, to the right of the Play and Stop buttons, click on your project name to select the project's Scheme, and select an appropriate run target—most likely, "My Mac". Click the play button to build and run your project.
+
+You should see the Console pop up at the bottom of the Xcode window.
+
+[ INFO ] Server starting on http://127.0.0.1:8080
+
+
+
+Visit Localhost:
+
+Open your web browser, and visit localhost:8080/hello or http://127.0.0.1:8080
+
+You should see the page.
+
+
+
