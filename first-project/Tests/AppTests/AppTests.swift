@@ -11,5 +11,12 @@ final class AppTests: XCTestCase {
             XCTAssertEqual(res.status, .ok)
             XCTAssertEqual(res.body.string, "Hello, world!")
         })
+        
+        try app.test(.GET, "first-website", afterResponse: { res in
+            XCTAssertEqual(res.status, .ok)
+            XCTAssertEqual(res.body.string, "Congratulations... your first website")
+        })
+        
+        
     }
 }
